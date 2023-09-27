@@ -72,6 +72,8 @@ API_KEY=<Your API KEY>
     ```
 
 ## Things to remember
+- Make sure you have turned on yout notifications in your system
+
 - If you're running the program in an environment where notifications can't be shown, set `NOTIFICATION` to False in the main.py file.
 
     ```
