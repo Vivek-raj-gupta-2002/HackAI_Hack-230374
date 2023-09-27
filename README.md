@@ -70,3 +70,14 @@ API_KEY=<Your API KEY>
     ```
     $ python main.py
     ```
+
+## Things to remember
+- If you're running the program in an environment where notifications can't be shown, set `NOTIFICATION` to False in the main.py file.
+
+    ```
+    NOTIFICATION: bool = True 
+    ```
+
+- Ensure that your machine is connected to the internet for the API to function properly.
+
+Follow these steps, and your project should run successfully, monitoring temperature based on your configured settings.
