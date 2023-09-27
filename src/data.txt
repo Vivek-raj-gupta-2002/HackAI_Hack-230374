@@ -1,0 +1,2 @@
+21:47:44:  City: 'Indore' Temperature: '23.100000000000023' Status: Low Temprature
+21:48:14:  City: 'Indore' Temperature: '23.100000000000023' Status: Low Temprature

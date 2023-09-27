@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "temperaturealerts"
+version = "0.1.0"
+description = "the Temperature Alert Agent using uAgent library"
+authors = ["Vivek-raj-gupta-2002 <vivekrajgupta2002@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uagents = "*"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+plyer = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
