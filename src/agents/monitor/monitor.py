@@ -6,7 +6,7 @@ import time
 
 agent = Agent(name='monitor')
 
-@agent.on_interval(period=30)
+@agent.on_interval(period=300)
 async def interval(ctx: Context):
     """
     get the temperature 
