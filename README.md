@@ -54,12 +54,12 @@ API_KEY=<Your API KEY>
 
     Install `poetry` (If not alreadey installed)
     ```
-    $ pip install poetry
+    pip install poetry
     ```  
 
     open the `poetry shell` by running the following command
     ```
-    $ poetry shell
+    poetry shell
     ```
 
     Install all the requriments 
