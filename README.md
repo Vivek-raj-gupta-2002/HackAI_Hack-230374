@@ -89,5 +89,7 @@ API_KEY=<Your API KEY>
 
 - Ensure that your machine is connected to the internet for the API to function properly.
 
+- A python version of 3.8 or later is required.
+
 Follow these steps, and your project should run successfully, monitoring temperature based on your configured settings.
 
