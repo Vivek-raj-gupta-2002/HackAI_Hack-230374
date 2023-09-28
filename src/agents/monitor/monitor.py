@@ -1,8 +1,6 @@
 from uagents import Agent, Context
-from messages import messages
 from utills import weather, getTime, notification, saveData
 from main import CITY, MAX_TEMP, MIN_TEMP, NOTIFICATION, FILENAME
-import time
 
 agent = Agent(name='monitor')
 
@@ -57,7 +55,7 @@ async def interval(ctx: Context):
         # the task completed
 
         # format the log message
-        save_mess = f"{getTime.getTime()}:  City: '{CITY}' Temperature: '{temp}' Status: {status}"
+        save_mess = f"[{getTime.getTime()}]:  City: '{CITY}' Temperature: '{temp}' Status: {status}"
         saveData.save(FILENAME, save_mess)
 
         ctx.logger.info(f"[{getTime.getTime()}]:  Successfull")
