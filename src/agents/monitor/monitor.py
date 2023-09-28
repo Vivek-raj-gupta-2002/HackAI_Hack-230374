@@ -1,8 +1,6 @@
 from uagents import Agent, Context
-from messages import messages
 from utills import weather, getTime, notification, saveData
 from main import CITY, MAX_TEMP, MIN_TEMP, NOTIFICATION, FILENAME
-import time
 
 agent = Agent(name='monitor')
 
@@ -16,7 +14,7 @@ async def interval(ctx: Context):
     
     """
     # get the temperature
-    ctx.logger.info(f"{getTime.getTime()}:  Checking....")
+    ctx.logger.info(f"[{getTime.getTime()}]:  Checking....")
     temp = weather.getTemp(CITY)
 
     status = 'Normal'
@@ -24,7 +22,7 @@ async def interval(ctx: Context):
     # check if we are getting wright data that is float value
     if type(temp) == str:
         status = 'Error'
-        ctx.logger.info(f"{getTime.getTime()}:  Some thing is wrong with CITY name or yout Network")
+        ctx.logger.info(f"[{getTime.getTime()}]:  Some thing is wrong with CITY name or yout Network")
 
     elif type(temp) == float:
 
@@ -40,7 +38,7 @@ async def interval(ctx: Context):
                     message=f'The temperature in {CITY} has Crossed {MAX_TEMP} temperature. The temperature is {temp}'
                 )
             else:
-                ctx.logger.info(f'{getTime.getTime()}:  Crossed high temperature {temp}')
+                ctx.logger.info(f'[{getTime.getTime()}]:  Crossed high temperature {temp}')
 
         if temp < MIN_TEMP:
             status ='Low Temprature'
@@ -53,11 +51,11 @@ async def interval(ctx: Context):
                     message=f'The temperature in {CITY} is below {MIN_TEMP} temperature. The temperature is {temp}'
                 )
             else:
-                ctx.logger.info(f'{getTime.getTime()}:  Crossed high temperature {temp}')
+                ctx.logger.info(f'[{getTime.getTime()}]:  Crossed high temperature {temp}')
         # the task completed
 
         # format the log message
-        save_mess = f"{getTime.getTime()}:  City: '{CITY}' Temperature: '{temp}' Status: {status}"
+        save_mess = f"[{getTime.getTime()}]:  City: '{CITY}' Temperature: '{temp}' Status: {status}"
         saveData.save(FILENAME, save_mess)
 
         ctx.logger.info(f"[{getTime.getTime()}]:  Successfull")
