@@ -54,12 +54,19 @@ API_KEY=<Your API KEY>
 
     Install `poetry` (If not alreadey installed)
     ```
-    $ pip install poetry
+    pip install poetry
     ```  
 
     open the `poetry shell` by running the following command
     ```
-    $ poetry shell
+    poetry shell
+    ```
+
+    Install all the requriments 
+    
+    `NOTE: ` Make sure you are in the directory where `pyproject.toml` file is present
+    ```
+    poetry install
     ```
 
 
@@ -68,7 +75,7 @@ API_KEY=<Your API KEY>
     chang the directory to `./src` or locate `main.py` and open `poetry shell` there 
 
     ```
-    $ python main.py
+    python main.py
     ```
 
 ## Things to remember
