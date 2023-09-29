@@ -1,7 +1,7 @@
 # TemperatureAlert
 
 ### Description
-TemperatureAlert is a program designed to periodically fetch temperature readings from https://openweathermap.org/api. It performs an analysis of the temperature data, monitoring for both high and low-temperature values, and identifies the maximum and minimum temperature recorded. Should the temperature surpass predetermined thresholds, the notifier feature will promptly dispatch notifications to the user.
+TemperatureAlert is a program designed to periodically fetch temperature readings from [openweathermap](https://openweathermap.org/api). It performs an analysis of the temperature data, monitoring for both high and low-temperature values, and identifies the maximum and minimum temperature recorded. Should the temperature surpass predetermined thresholds, the notifier feature will promptly dispatch notifications to the user.
 
 ### Functions
 1. Regular Temperature Monitoring: TemperatureAlert consistently monitors temperature data.
