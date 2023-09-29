@@ -12,6 +12,23 @@ TemperatureAlert is a program designed to periodically fetch temperature reading
 
 4. Data Logging: TemperatureAlert routinely saves temperature data to a log file for reference and analysis.
 
+## Things to remember
+- Make sure you have turned on yout notifications in your system
+
+- If you're running the program in an environment where notifications can't be shown, set `NOTIFICATION` to False in the main.py file.
+
+    ```
+    NOTIFICATION: bool = True 
+    ```
+
+- Ensure that your machine is connected to the internet for the API to function properly.
+
+- A python version of 3.8 or later is required.
+
+Follow these steps, and your project should run successfully, monitoring temperature based on your configured settings.
+
+
+
 ## API KEY
 To utilize the OpenWeatherMap API, you need to obtain an API key from [OpenWeatherMap](https://home.openweathermap.org/api_keys). Once you have the API key, place it in the `.env` file as follows:
 
@@ -77,19 +94,3 @@ API_KEY=<Your API KEY>
     ```
     python main.py
     ```
-
-## Things to remember
-- Make sure you have turned on yout notifications in your system
-
-- If you're running the program in an environment where notifications can't be shown, set `NOTIFICATION` to False in the main.py file.
-
-    ```
-    NOTIFICATION: bool = True 
-    ```
-
-- Ensure that your machine is connected to the internet for the API to function properly.
-
-- A python version of 3.8 or later is required.
-
-Follow these steps, and your project should run successfully, monitoring temperature based on your configured settings.
-
