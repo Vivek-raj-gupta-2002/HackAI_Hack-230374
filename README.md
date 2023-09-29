@@ -1,21 +1,21 @@
 # TemperatureAlert
 
 ### Description
-TemperatureAlert is a program designed to periodically fetch temperature readings from https://openweathermap.org/api. It performs an analysis of the temperature data, monitoring for both high and low temperature values, and identifies the maximum and minimum temperature recorded. Should the temperature surpass predetermined thresholds, the notifier feature will promptly dispatch notifications to the user.
+TemperatureAlert is a program designed to periodically fetch temperature readings from https://openweathermap.org/api. It performs an analysis of the temperature data, monitoring for both high and low-temperature values, and identifies the maximum and minimum temperature recorded. Should the temperature surpass predetermined thresholds, the notifier feature will promptly dispatch notifications to the user.
 
 ### Functions
 1. Regular Temperature Monitoring: TemperatureAlert consistently monitors temperature data.
 
-2. Low Temperature Notifications: Users are promptly notified if the temperature falls below the designated MIN_TEMPERATURE.
+2. Low-Temperature Notifications: Users are promptly notified if the temperature falls below the designated MIN_TEMPERATURE.
 
-3. High Temperature Notifications: Users receive timely notifications if the temperature surpasses the set MAX_TEMPERATURE.
+3. High-Temperature Notifications: Users receive timely notifications if the temperature surpasses the set MAX_TEMPERATURE.
 
 4. Data Logging: TemperatureAlert routinely saves temperature data to a log file for reference and analysis.
 
 ## Things to remember
-- Make sure you have turned on yout notifications in your system
+- Make sure you have turned on your notifications in your system
 
-- If you're running the program in an environment where notifications can't be shown, set `NOTIFICATION` to False in the main.py file.
+- If running the program in an environment where notifications can't be shown, set `NOTIFICATION` to False in the main.py file.
 
     ```
     NOTIFICATION: bool = True 
@@ -23,14 +23,12 @@ TemperatureAlert is a program designed to periodically fetch temperature reading
 
 - Ensure that your machine is connected to the internet for the API to function properly.
 
-- A python version of 3.8 or later is required.
-
-Follow these steps, and your project should run successfully, monitoring temperature based on your configured settings.
+- A Python version of 3.8 or later is required.
 
 
 
 ## API KEY
-To utilize the OpenWeatherMap API, you need to obtain an API key from [OpenWeatherMap](https://home.openweathermap.org/api_keys). Once you have the API key, place it in the `.env` file as follows:
+To utilize the OpenWeatherMap API, you must obtain an API key from [OpenWeatherMap](https://home.openweathermap.org/api_keys). Once you have the API key, place it in the `.env` file as follows:
 
 
 Set the API KEY in the .env file as 
@@ -38,7 +36,7 @@ Set the API KEY in the .env file as
 API_KEY=<Your API KEY>
 ```
 
-## RUN PRIOJECT
+## RUN PROJECT
 
 1. Open the main.py file located in the src folder.
 
@@ -65,11 +63,11 @@ API_KEY=<Your API KEY>
         FILENAME: str = './data.txt'
         ```
 
-3. Open comandprompt or Terminial and be in the parent folder `./`
+3. Open the command prompt or Terminal and be in the parent folder `./`
 
     - Run the command below, which will install all dependencies required by this project:
 
-    Install `poetry` (If not alreadey installed)
+    Install `poetry` (If not already installed)
     ```
     pip install poetry
     ```  
@@ -79,7 +77,7 @@ API_KEY=<Your API KEY>
     poetry shell
     ```
 
-    Install all the requriments 
+    Install all the requirements 
     
     `NOTE: ` Make sure you are in the directory where `pyproject.toml` file is present
     ```
@@ -89,8 +87,10 @@ API_KEY=<Your API KEY>
 
 4. Run the project by typing
 
-    chang the directory to `./src` or locate `main.py` and open `poetry shell` there 
+    change the directory to `./src` or locate `main.py` and open `poetry shell` there 
 
     ```
     python main.py
     ```
+
+Follow these steps, and your project should run successfully, monitoring temperature based on your configured settings.
